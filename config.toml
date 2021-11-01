@@ -3,3 +3,8 @@ languageCode = "fr-fr"
 title = "Rire et rire - la bière des copains"
 theme = "hugo-split" 
 publishDir = "docs"
+
+[params.visual.image]
+  enable = true
+  file = "beer-bg.jpg"
+  position = "center center"
