@@ -1,5 +1,5 @@
 baseURL = "https://rire-et-rire.fr/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "fr-fr"
+title = "Rire et rire - la bière des copains"
 theme = "hugo-split" 
 publishDir = "docs"
