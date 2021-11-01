@@ -3,6 +3,11 @@ languageCode = "fr-fr"
 title = "Rire et rire - la bière des copains"
 theme = "hugo-split" 
 publishDir = "docs"
+author = "On est là bien org"
+description = "Le site de la bière des copains; il y a rire et rire"
+shareImage = "beer-bg.jpg"
+copyright = "&copy;2021 On est là bien"
+
 
 [params.visual.image]
   enable = true
