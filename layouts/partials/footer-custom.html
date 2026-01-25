@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <div class="logo-frame">
+        <span>RIRE ET RIRE</span>
+      </div>
+      <p class="footer-tagline">Bière de Dunkerque</p>
+    </div>
+
+    <div class="footer-contact">
+      <p><a href="mailto:contact@rire-et-rire.fr">contact@rire-et-rire.fr</a></p>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-legal">
+      <p class="alcohol-warning">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+      <p class="copyright">&copy; {{ now.Year }} Rire et Rire — Dunkerque</p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+// Mobile menu toggle
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('active');
+  this.classList.toggle('active');
+});
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "fr-fr" }}">
+
+<head>
+  {{ partial "head" . }}
+</head>
+
+<body class="rire-et-rire">
+
+  <!-- Navigation -->
+  {{ partial "navigation" . }}
+
+  <!-- Main Content -->
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- Footer -->
+  {{ partial "footer-custom" . }}
+
+</body>
+</html>

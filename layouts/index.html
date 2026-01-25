@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-origin">DUNKERQUE</p>
+    <div class="hero-logo">
+      <span>RIRE ET RIRE</span>
+    </div>
+    <p class="hero-subtitle">Bière Blanche • 5% vol.</p>
+    <div class="hero-separator"></div>
+    <p class="hero-expression">Y'a rire et rire, faut pas prendre mon cul pour une tirelire</p>
+    <div class="hero-separator"></div>
+    <p class="hero-tagline">La bière qui te prend pas pour un pigeon.</p>
+  </div>
+  <div class="hero-scroll">
+    <span>Découvrir</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- Story Section -->
+<section class="section section-story">
+  <div class="container">
+    <h2 class="section-title">Y'a rire et rire...</h2>
+    <div class="story-content">
+      <div class="story-text">
+        <p>Chez nous, à Dunkerque, on dit <em>"Y'a rire et rire, faut pas prendre mon cul pour une tirelire."</em></p>
+        <p>Ça veut dire qu'on sait faire la différence entre le vrai et le faux. Entre une vraie bière et une piquette qui se la raconte.</p>
+        <p><strong>Rire et Rire</strong>, c'est une bière blanche de caractère. Fraîche, légère, avec cette petite touche d'agrumes et d'épices qui fait toute la différence.</p>
+        <p>Pas de blabla marketing. Pas de prix qui pique. Juste une bière blanche authentique, partagée entre amis, avec le sourire.</p>
+        <p class="story-conclusion">Parce que le vrai rire, c'est celui qu'on partage.</p>
+      </div>
+    </div>
+    <a href="{{ .Site.BaseURL }}notre-histoire/" class="btn btn-primary">Découvrir notre histoire</a>
+  </div>
+</section>
+
+<!-- Beer Section -->
+<section class="section section-beer">
+  <div class="container">
+    <div class="beer-content">
+      <div class="beer-info">
+        <h2 class="section-title-light">Une Blanche, la vraie</h2>
+        <div class="beer-details">
+          <p class="beer-type">Blanche • 5% vol.</p>
+          <p class="beer-description">Voilée, rafraîchissante, subtilement épicée.</p>
+          <p class="beer-description">Une bière blanche comme on les aime dans le Nord : légère mais pas fade, fraîche mais pas banale. Des notes d'agrumes, une pointe de coriandre, et ce velouté incomparable du blé.</p>
+          <p class="beer-highlight">Parfaite pour l'apéro, idéale au soleil, indispensable entre amis.</p>
+        </div>
+        <a href="{{ .Site.BaseURL }}la-biere/" class="btn btn-secondary">Découvrir la bière</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Blanche Section -->
+<section class="section section-why">
+  <div class="container">
+    <h2 class="section-title">Pourquoi une blanche ?</h2>
+    <div class="why-content">
+      <div class="why-item">
+        <h3>Fraîcheur incomparable</h3>
+        <p>La blanche, c'est LA bière de la convivialité. Légère, désaltérante, elle se boit sans soif et met tout le monde d'accord.</p>
+      </div>
+      <div class="why-item">
+        <h3>Le goût du Nord</h3>
+        <p>Les bières de blé, c'est une tradition du Nord. On perpétue un savoir-faire, on ne suit pas une mode.</p>
+      </div>
+      <div class="why-item">
+        <h3>Pour tous les moments</h3>
+        <p>Carnaval, terrasse d'été, apéro improvisé... La blanche s'adapte à toutes vos envies de partage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section section-contact">
+  <div class="container">
+    <h2 class="section-title">Une question ?</h2>
+    <p class="contact-text">Envie de nous connaître, de savoir où trouver notre bière, ou simplement de dire bonjour ?</p>
+    <a href="mailto:contact@rire-et-rire.fr" class="contact-email">contact@rire-et-rire.fr</a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,81 +1,121 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="fr-fr">
 
 <head>
   <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-<title>My New Hugo Site</title>
-
-
+<title>Rire et Rire — Bière de Dunkerque</title>
+<meta name="author" content="Rire et Rire" />
+<meta name="description" content="La bière qui te prend pas pour un pigeon. Expression dunkerquoise, bière dunkerquoise." />
 <meta name="robots" content="index, follow" />
 <meta name="referrer" content="always" />
 
 
-<meta property="og:title" content="My New Hugo Site" />
-
+<meta property="og:title" content="Rire et Rire — Bière de Dunkerque" />
+<meta property="og:description" content="La bière qui te prend pas pour un pigeon. Expression dunkerquoise, bière dunkerquoise." />
 <meta property="og:url" content="https://rire-et-rire.fr/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
 
 
 
+<link rel="icon" href="https://rire-et-rire.fr/favicon.png" />
 
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="https://rire-et-rire.fr/assets/css/split.css" type="text/css" media="screen" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-
-
-
-
-
-
+<link rel="stylesheet" href="https://rire-et-rire.fr/css/style.css" type="text/css" media="screen" />
 
 </head>
 
-<body id="fullsingle" class="page-template-page-fullsingle-split">
+<body class="rire-et-rire">
 
-  <div class="fs-split">
-
-    
-    
-
-    
-    <div class="split-content">
-      <div class="split-content-vertically-center">
-        
-        <div class="split-intro">
-  <h1>Tags</h1>
   
-</div>
+  <header class="site-header">
+  <nav class="nav-container">
+    <a href="https://rire-et-rire.fr/" class="nav-logo">
+      <span class="logo-text">RIRE ET RIRE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="https://rire-et-rire.fr/" class="">Accueil</a></li>
+      <li><a href="https://rire-et-rire.fr/notre-histoire/" class="">Notre Histoire</a></li>
+      <li><a href="https://rire-et-rire.fr/la-biere/" class="">La Biere</a></li>
+      <li><a href="https://rire-et-rire.fr/contact/" class="">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
 
-        
-        
-          
-          <div class="split-bio">
   
-</div>
+  <main>
+    
 
-        
+<article class="page-content">
 
-        
-        <div class="split-credit">
-  <p> - <a href="https://onepagelove.com/split" title="Split Template">Split Template</a> by <a href="https://onepagelove.com" title="One Page Love">One Page Love</a></p>
+  
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Tags</h1>
+      
+    </div>
+  </header>
 
-  <!--
-  To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split
-  this really helps contribute towards us developing more templates and means the world to me!
-  Cheers, Rob (@robhope)
-  -->
-</div>
+  
+  <div class="page-body">
+    <div class="container">
+      
+    </div>
+  </div>
 
+</article>
+
+
+  </main>
+
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <div class="logo-frame">
+        <span>RIRE ET RIRE</span>
       </div>
+      <p class="footer-tagline">Bière de Dunkerque</p>
+    </div>
+
+    <div class="footer-contact">
+      <p><a href="mailto:contact@rire-et-rire.fr">contact@rire-et-rire.fr</a></p>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-legal">
+      <p class="alcohol-warning">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+      <p class="copyright">&copy; 2026 Rire et Rire — Dunkerque</p>
     </div>
 
   </div>
+</footer>
+
+<script>
+
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('active');
+  this.classList.toggle('active');
+});
+</script>
+
 
 </body>
 </html>

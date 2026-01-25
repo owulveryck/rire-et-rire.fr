@@ -1,0 +1,18 @@
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="{{ .Site.BaseURL }}" class="nav-logo">
+      <span class="logo-text">RIRE ET RIRE</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">Accueil</a></li>
+      <li><a href="{{ .Site.BaseURL }}notre-histoire/" class="{{ if eq .Section "notre-histoire" }}active{{ end }}">Notre Histoire</a></li>
+      <li><a href="{{ .Site.BaseURL }}la-biere/" class="{{ if eq .Section "la-biere" }}active{{ end }}">La Biere</a></li>
+      <li><a href="{{ .Site.BaseURL }}contact/" class="{{ if eq .Section "contact" }}active{{ end }}">Contact</a></li>
+    </ul>
+  </nav>
+</header>

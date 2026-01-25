@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git submodule update --init --recursive)",
+      "Bash(hugo)",
+      "Bash(/usr/bin/hugo --source /home/olivierwulveryck/github.com/owulveryck/rire-et-rire.fr)"
+    ]
+  }
+}

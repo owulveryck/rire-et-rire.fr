@@ -1,0 +1,891 @@
+/* ===========================================
+   RIRE ET RIRE - Identité Visuelle
+   Style "Mer du Nord" - Fraîcheur & Littoral
+   =========================================== */
+
+/* ===========================================
+   1. VARIABLES (Palette de Couleurs)
+   Style "Mer du Nord" - Fraîcheur & Littoral
+   =========================================== */
+:root {
+  /* Couleurs Principales - Mer du Nord */
+  --bleu-horizon: #4A90A4;
+  --bleu-ciel: #7BB8C9;
+  --bleu-profond: #2C5F7C;
+
+  /* Agrumes de la Blanche */
+  --orange-agrumes: #F5A623;
+  --jaune-citron: #FFD93D;
+
+  /* Neutres Lumineux */
+  --blanc-ecume: #FFFFFF;
+  --blanc-sable: #F8F6F2;
+  --gris-dune: #E8E4DC;
+
+  /* Accent Dunkerque */
+  --rouge-carnaval: #C8102E;
+
+  /* Couleurs Fonctionnelles */
+  --text-dark: #2C5F7C;
+  --text-light: #FFFFFF;
+  --text-muted: rgba(44, 95, 124, 0.7);
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Typographie */
+  --font-primary: 'Zilla Slab', Georgia, serif;
+  --font-secondary: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Caveat', cursive;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* ===========================================
+   2. RESET & BASE
+   =========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  background-color: var(--blanc-ecume);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--bleu-profond);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--orange-agrumes);
+}
+
+/* ===========================================
+   3. TYPOGRAPHIE
+   =========================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--bleu-profond);
+}
+
+h1 { font-size: 3rem; margin-bottom: var(--spacing-md); }
+h2 { font-size: 2.25rem; margin-bottom: var(--spacing-sm); }
+h3 { font-size: 1.5rem; margin-bottom: var(--spacing-sm); }
+h4 { font-size: 1.25rem; margin-bottom: var(--spacing-xs); }
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--bleu-profond);
+}
+
+em {
+  font-family: var(--font-accent);
+  font-size: 1.3em;
+  font-style: normal;
+  color: var(--orange-agrumes);
+}
+
+blockquote {
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  color: var(--bleu-profond);
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  border-left: 4px solid var(--orange-agrumes);
+  background: rgba(245, 166, 35, 0.1);
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--bleu-ciel);
+  margin: var(--spacing-lg) auto;
+  width: 60%;
+  max-width: 300px;
+}
+
+ul, ol {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* ===========================================
+   4. LAYOUT
+   =========================================== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+/* ===========================================
+   5. NAVIGATION
+   =========================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--blanc-ecume);
+  box-shadow: 0 2px 10px rgba(44, 95, 124, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--bleu-profond);
+  padding: 0.3em 0.6em;
+  border: 3px double var(--bleu-ciel);
+  display: inline-block;
+  transition: all var(--transition-fast);
+}
+
+.logo-text:hover {
+  border-color: var(--orange-agrumes);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--bleu-profond);
+  padding: var(--spacing-xs) 0;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange-agrumes);
+  transition: width var(--transition-normal);
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+.nav-menu a.active {
+  color: var(--orange-agrumes);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--bleu-profond);
+  transition: var(--transition-fast);
+}
+
+/* ===========================================
+   6. HERO SECTION
+   =========================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg,
+    var(--bleu-ciel) 0%,
+    var(--bleu-horizon) 40%,
+    var(--bleu-profond) 100%);
+  padding: var(--spacing-xl) var(--spacing-md);
+  padding-top: calc(var(--spacing-xl) + 80px); /* Account for fixed nav */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet vagues subtil */
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C300,120 600,0 900,60 C1050,90 1150,60 1200,60 L1200,120 L0,120 Z' fill='%23F8F6F2'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-origin {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--blanc-ecume);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-logo {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  border: 4px double var(--blanc-ecume);
+  margin-bottom: var(--spacing-md);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.hero-logo span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--blanc-ecume);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: var(--blanc-ecume);
+  opacity: 0.95;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-separator {
+  width: 60%;
+  max-width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--orange-agrumes), transparent);
+  margin: var(--spacing-md) auto;
+}
+
+.hero-expression {
+  font-family: var(--font-accent);
+  font-size: 1.8rem;
+  color: var(--jaune-citron);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-tagline {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--orange-agrumes);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: calc(var(--spacing-lg) + 80px);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--blanc-ecume);
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
+
+.hero-scroll span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid var(--blanc-ecume);
+  border-bottom: 2px solid var(--blanc-ecume);
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-10px); }
+  60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* ===========================================
+   7. SECTIONS
+   =========================================== */
+/* Story Section */
+.section-story {
+  background: var(--blanc-sable);
+  text-align: center;
+}
+
+.section-story .section-title {
+  color: var(--bleu-profond);
+}
+
+.story-content {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.story-text p {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.story-text em {
+  display: block;
+  font-size: 1.4rem;
+  margin: var(--spacing-md) 0;
+  color: var(--orange-agrumes);
+}
+
+.story-conclusion {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--bleu-profond);
+  margin-top: var(--spacing-lg);
+}
+
+/* Beer Section */
+.section-beer {
+  background: linear-gradient(135deg, var(--bleu-horizon) 0%, var(--bleu-profond) 100%);
+  text-align: center;
+  position: relative;
+}
+
+.section-title-light {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--blanc-ecume);
+  margin-bottom: var(--spacing-md);
+}
+
+.beer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.beer-type {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  color: var(--orange-agrumes);
+  margin-bottom: var(--spacing-sm);
+}
+
+.beer-description {
+  color: var(--blanc-ecume);
+  opacity: 0.95;
+  margin-bottom: var(--spacing-sm);
+}
+
+.beer-highlight {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--jaune-citron);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Why Blanche Section */
+.section-why {
+  background: var(--blanc-ecume);
+}
+
+.section-why .section-title {
+  text-align: center;
+  color: var(--bleu-profond);
+}
+
+.why-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-item {
+  text-align: center;
+  padding: var(--spacing-md);
+  background: var(--blanc-sable);
+  border-radius: 8px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(44, 95, 124, 0.15);
+}
+
+.why-item h3 {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  color: var(--bleu-profond);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.why-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: var(--orange-agrumes);
+}
+
+.why-item p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .why-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+/* Contact Section */
+.section-contact {
+  background: var(--gris-dune);
+  text-align: center;
+}
+
+.contact-text {
+  max-width: 500px;
+  margin: 0 auto var(--spacing-md);
+  color: var(--text-muted);
+}
+
+.contact-email {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  color: var(--bleu-profond);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--bleu-horizon);
+  display: inline-block;
+  transition: all var(--transition-normal);
+}
+
+.contact-email:hover {
+  background: var(--bleu-horizon);
+  color: var(--blanc-ecume);
+  border-color: var(--bleu-horizon);
+}
+
+/* Section Title */
+.section-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ===========================================
+   8. BUTTONS
+   =========================================== */
+.btn {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1em 2em;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--bleu-profond);
+  color: var(--blanc-ecume);
+  border-color: var(--bleu-profond);
+}
+
+.btn-primary:hover {
+  background: var(--bleu-horizon);
+  color: var(--blanc-ecume);
+  border-color: var(--bleu-horizon);
+}
+
+.btn-secondary {
+  background: var(--orange-agrumes);
+  color: var(--blanc-ecume);
+  border-color: var(--orange-agrumes);
+}
+
+.btn-secondary:hover {
+  background: var(--blanc-ecume);
+  color: var(--bleu-profond);
+  border-color: var(--blanc-ecume);
+}
+
+/* ===========================================
+   9. PAGE CONTENT
+   =========================================== */
+.page-content {
+  padding-top: 80px; /* Account for fixed nav */
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--bleu-ciel) 0%, var(--bleu-profond) 100%);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--blanc-ecume);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+  border: 4px double var(--blanc-ecume);
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.page-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: var(--orange-agrumes);
+  margin-top: var(--spacing-md);
+}
+
+.page-body {
+  padding: var(--spacing-xl) 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-body h2 {
+  font-size: 1.75rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--bleu-ciel);
+}
+
+.page-body h2:first-child {
+  margin-top: 0;
+}
+
+.page-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-body ul li {
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.page-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  background: var(--orange-agrumes);
+  border-radius: 50%;
+}
+
+/* ===========================================
+   10. FOOTER
+   =========================================== */
+.site-footer {
+  background: linear-gradient(180deg, var(--bleu-profond) 0%, #1a4a5f 100%);
+  padding: var(--spacing-lg) 0 var(--spacing-md);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.footer-logo .logo-frame {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 3px double var(--bleu-ciel);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-logo .logo-frame span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--blanc-ecume);
+  letter-spacing: 0.1em;
+}
+
+.footer-tagline {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  color: var(--orange-agrumes);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-contact a {
+  color: var(--blanc-ecume);
+  font-size: 1.1rem;
+}
+
+.footer-contact a:hover {
+  color: var(--orange-agrumes);
+}
+
+.footer-separator {
+  width: 100px;
+  height: 1px;
+  background: var(--bleu-ciel);
+  opacity: 0.4;
+  margin: var(--spacing-md) auto;
+}
+
+.footer-legal {
+  color: var(--blanc-ecume);
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+.alcohol-warning {
+  margin-bottom: var(--spacing-xs);
+}
+
+.copyright {
+  margin-bottom: 0;
+}
+
+/* ===========================================
+   11. RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--blanc-ecume);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--spacing-sm) 0;
+    box-shadow: 0 10px 20px rgba(44, 95, 124, 0.1);
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: var(--spacing-sm);
+  }
+
+  .hero-logo span {
+    font-size: 2rem;
+  }
+
+  .hero-expression {
+    font-size: 1.4rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .section-title,
+  .section-title-light {
+    font-size: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+    padding: 0.4em 0.8em;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-logo {
+    padding: 0.5em 1em;
+  }
+
+  .hero-logo span {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-origin {
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+  }
+
+  .contact-email {
+    font-size: 1.1rem;
+    padding: var(--spacing-sm);
+  }
+}
+
+/* ===========================================
+   12. PRINT STYLES
+   =========================================== */
+@media print {
+  .site-header,
+  .hero-scroll,
+  .nav-toggle {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  .hero {
+    background: #fff;
+    color: #000;
+    min-height: auto;
+    padding: 2cm;
+  }
+
+  .hero-logo span,
+  .hero-origin,
+  .hero-expression,
+  .hero-tagline {
+    color: #000;
+  }
+
+  .section {
+    background: #fff;
+    color: #000;
+  }
+}

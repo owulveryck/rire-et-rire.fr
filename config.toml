@@ -1,15 +1,34 @@
 baseURL = "https://rire-et-rire.fr/"
 languageCode = "fr-fr"
-title = "Rire et rire - la bière des copains"
-theme = "hugo-split" 
+title = "Rire et Rire — Bière de Dunkerque"
+theme = "hugo-split"
 publishDir = "docs"
-author = "On est là bien org"
-description = "Le site de la bière des copains; il y a rire et rire"
-shareImage = "beer-bg.jpg"
-copyright = "&copy;2021 On est là bien"
 
+[params]
+  author = "Rire et Rire"
+  description = "La bière qui te prend pas pour un pigeon. Expression dunkerquoise, bière dunkerquoise."
+  favicon = "favicon.png"
 
 [params.visual.image]
+  enable = false
+
+[params.custom.css]
   enable = true
-  file = "beer-bg.jpg"
-  position = "center center"
+
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Notre Histoire"
+    url = "/notre-histoire/"
+    weight = 2
+  [[menu.main]]
+    name = "La Bière"
+    url = "/la-biere/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4

@@ -2,10 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rire-et-rire.fr/</loc>
-    <lastmod>2021-11-01T10:51:48+01:00</lastmod>
-  </url><url>
     <loc>https://rire-et-rire.fr/categories/</loc>
+  </url><url>
+    <loc>https://rire-et-rire.fr/contact/</loc>
+  </url><url>
+    <loc>https://rire-et-rire.fr/la-biere/</loc>
+  </url><url>
+    <loc>https://rire-et-rire.fr/notre-histoire/</loc>
+  </url><url>
+    <loc>https://rire-et-rire.fr/</loc>
   </url><url>
     <loc>https://rire-et-rire.fr/tags/</loc>
   </url>
